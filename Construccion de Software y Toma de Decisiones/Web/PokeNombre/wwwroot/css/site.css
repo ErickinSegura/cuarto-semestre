@@ -1,0 +1,59 @@
+/* Estilos generales */
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+* {
+    font-family: "Ojuju", sans-serif;
+}
+
+body {
+    background: rgb(255,98,0);
+    background: radial-gradient(circle, rgba(255,98,0,1) 0%, rgba(255,0,0,1) 77%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+
+input[type="submit"] {
+    background-color: #ee6c2b;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+        background-color: #ff7f3d;
+
+}
+
+h1 {
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ee6c2b;
+}
+
+

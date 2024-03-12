@@ -1,0 +1,47 @@
+﻿@page
+@model IndexModel 
+
+
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<body>
+    <div>
+        <h1>Pokename</h1>
+        <p>Descubre tu nombre de Pokémon</p>
+        <form method="post" class="form-group">
+            
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" input asp-for="Nombre" required>
+            </div>
+
+            <p>
+                Mes:
+                <select asp-for="Mes" class="form-select form-select-lg mb-3" required>
+                <optgroup label="Selecciona un mes">
+                    <option value="1" selected>Enero</option>
+                    <option value="2">Febrero</option>
+                    <option value="3">Marzo</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Mayo</option>
+                    <option value="6">Junio</option>
+                    <option value="7">Julio</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Septiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Diciembre</option>
+                </optgroup> 
+            </select></p>
+
+
+            <input id="Submit1" type="submit" asp-page="Resultados" value="Calcula" />
+            <p>Respuesta: @Model.Mensaje</p>
+        </form>
+    </div>
+</body>
+</html>
